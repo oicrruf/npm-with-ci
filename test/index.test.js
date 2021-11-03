@@ -1,7 +1,6 @@
 const request = require('supertest')
 const app = require('../src')
 
-
 it('test /health route', done => {
   request(app)
     .get('/health')
