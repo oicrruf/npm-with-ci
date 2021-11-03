@@ -7,13 +7,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2
+      - uses: actions/checkout@v2
       - name: Build Docker image
         run: docker build . --file Dockerfile --tag node-app
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2
+      - uses: actions/checkout@v2
       - name: API Test
         uses: actions/setup-node@v1
         with:
